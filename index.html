@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AxiomNizam — Rule-Driven Control Plane</title>
+  <meta name="description" content="AxiomNizam is a rule-driven cloud-native platform for building APIs, dashboards, ETL pipelines, and system integrations." />
+
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: #12182a;
+      --text: #e6e9f0;
+      --muted: #9aa3b2;
+      --accent: #4f7cff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 16px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: var(--muted);
+      max-width: 720px;
+      margin: 0 auto 32px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 28px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>AxiomNizam</h1>
+    <p>
+      Rule-driven cloud-native control plane for building APIs, dashboards,
+      data pipelines, and system integrations — all from a unified platform.
+    </p>
+    <a class="btn" href="https://github.com/axiomnizam">View on GitHub</a>
+  </header>
+
+  <section>
+    <h2 style="margin-bottom: 32px; text-align:center;">Core Capabilities</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Rule-Based API Engine</h3>
+        <p>Create and manage APIs using declarative rules defined through GUI or configuration.</p>
+      </div>
+
+      <div class="card">
+        <h3>Multi-Database Support</h3>
+        <p>Connect SQL and NoSQL databases including PostgreSQL, MySQL, MongoDB, and more.</p>
+      </div>
+
+      <div class="card">
+        <h3>Unified Dashboard</h3>
+        <p>Visualize data, documents, metrics, and system states from a single interface.</p>
+      </div>
+
+      <div class="card">
+        <h3>ETL & Data Pipelines</h3>
+        <p>Design extraction, transformation, and loading workflows with rule-driven execution.</p>
+      </div>
+
+      <div class="card">
+        <h3>Notification System</h3>
+        <p>Send email, SMS, and webhook notifications based on system rules and events.</p>
+      </div>
+
+      <div class="card">
+        <h3>Kubernetes Integration</h3>
+        <p>Observe and integrate Kubernetes and etcd data into platform-level workflows.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="margin-bottom: 32px; text-align:center;">Cloud-Native Architecture</h2>
+
+    <p style="max-width: 900px; margin: 0 auto 40px; color: var(--muted); text-align:center;">
+      AxiomNizam is designed as a fully cloud-native platform. All components are deployed,
+      managed, and scaled inside Kubernetes, following controller-based and declarative
+      infrastructure principles.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Kubernetes-Native</h3>
+        <p>
+          Every AxiomNizam component runs as a Kubernetes workload using Deployments,
+          StatefulSets, Jobs, and CronJobs with native health checks and autoscaling.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Controller & Operator Model</h3>
+        <p>
+          The platform follows a control-plane architecture with controllers continuously
+          reconciling desired state defined by rules and configurations.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Multi-Tenant Ready</h3>
+        <p>
+          Designed for namespace-based and logical tenancy, enabling isolation of users,
+          APIs, databases, and pipelines within shared Kubernetes clusters.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Declarative Configuration</h3>
+        <p>
+          APIs, pipelines, integrations, and notifications are defined declaratively
+          using rules that can be stored as YAML, JSON, or managed via the GUI.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Observability Built-In</h3>
+        <p>
+          Native integration with Prometheus, Grafana, and logging pipelines to expose
+          metrics, traces, and execution visibility across all components.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Secure by Design</h3>
+        <p>
+          Supports Kubernetes RBAC, service accounts, secrets management, and external
+          integrations such as Vault for secure credential and token handling.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      © AxiomNizam — Open Source Cloud-Native Platform<br />
+      Licensed under Apache 2.0
+    </p>
+  </footer>
+
+</body>
+</html>
